@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<h1>Home</h1>
+	{{ user.given_name |safe}}<br>
+	{{ user.email |safe}}<br>
+	{{ user.nick_name |safe}}
+	{{ user.middle_name |safe}}
+	<img src="{{ user.picture |safe}}">
+</body>
+</html>
